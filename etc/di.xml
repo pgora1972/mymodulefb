@@ -1,0 +1,8 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:ObjectManager/etc/config.xsd">
+    <preference for="MyModule\Module\Api\Data\InstallSchemaInterface" type="MyModule\Module\Model\Data\InstallSchema"/>
+    <preference for="MyModule\Module\Api\UninstallInterface" type="MyModule\Module\Setup\Uninstall"/>
+    <preference for="MyModule\Module\Api\Data\UstawieniaInterface" type="MyModule\Module\Model\Data\Ustawienia"/>
+    <preference for="MyModule\Module\Api\Data\InstallDataInterface"
+                type="MyModule\Module\Model\Data\InstallData"/>
+</config>

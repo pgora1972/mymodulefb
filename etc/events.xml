@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:noNamespaceSchemaLocation="urn:magento:framework:Module/etc/events.xsd">
+    <event name="admin_system_config_changed_section_MyModule_Module">
+        <observer name="custom_admin_system_config_changed_section_MyModule_Module"
+                  instance="MyModule\Module\Observer\Admin\ConfigSaveObserver"/>
+    </event>
+    <event name="catalog_category_save_after">
+        <observer name="category_save_observer_ep" instance="MyModule\Module\Observer\Admin\CategorySaveObserver" />
+    </event>
+</config>
